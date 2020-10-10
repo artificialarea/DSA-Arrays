@@ -23,6 +23,8 @@ Array { length: 5, _capacity: 12, ptr: 3 }
 The length is 5 because we pushed 5 items and the capacity is 12 because after the fourth push the resize was called and increased capacity to 3X the original capacity.
 
 ??How is the pointer calculated the way it is
+
+
 <br />
 
 ## 3. Exploring the pop() method
@@ -31,17 +33,21 @@ Array { length: 12, _capacity: 39, ptr: 15 }
  We popped 3 times which decreased the length by 3
 
 
+
 <br />
 
 ## 4. Understanding more about how arrays work
 First Item - 10
 String prints as NaN because Array is defined as holding Floats only
 Resize makes the array capable of holding more values by trippling in hopes that we don't need to do it often.
+
+
+
 <br />
 
 ## 5. URLify a string
 
-
+see: **`urlify.js`**
 
 
 
