@@ -81,7 +81,7 @@ see: **`merge-arrays.js`**
 
 ## 9. Remove characters
 
-
+see: **`remove-chars.js`** _also: `remove-chars-alt.js`_
 
 
 <br />
