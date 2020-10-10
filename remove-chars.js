@@ -14,22 +14,15 @@ function removeChar(string, chars) {
     }
 
     for (let i = 0; i < result.length; i++) {
-        for (let j = 0; j < charsFilter.length; j++) {
-            if (results[i] == charsFilter.charAt(j)) {
-                finalResults[]
-            }
+        if(charsFilter.includes(result[i]) == false){
+            finalResults = finalResults + result[i]
         }
     }
 
-
-
-
-    return result;
-
-
+console.log(finalResults)
 }
 
 const string = 'leap year';
 const charsToRemove = 'aeiou';
 
-console.log(removeChar(string, charsToRemove));
+removeChar(string, charsToRemove);

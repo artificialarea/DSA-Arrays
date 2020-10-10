@@ -93,17 +93,14 @@ function main(){
     // arr.push(15);
     // arr.push(14);
 
-    // console.log(arr);
-
     // arr.pop()
     // arr.pop()
     // arr.pop()
 
-    // console.log(arr);
-
-    arr.push('tauhida');
+    arr.push('tauhida')
 
     console.log(arr.get(0));
 }
 
-main();
+main()
+
