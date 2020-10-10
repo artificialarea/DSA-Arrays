@@ -2,10 +2,12 @@
 
 class Memory {
     constructor() {
-        this.memory = new Float64Array(1024);
+        this.memory = new Float64Array(1024);   // a memory address
         this.head = 0;
     }
 
+    // reserve a contiguous block of memory
+    // consisting of `size` boes
     allocate(size) {
         if (this.head + size > this.memory.length) {
             return null;
@@ -47,3 +49,8 @@ class Memory {
 }
 
 module.exports = Memory;
+
+
+// FOOTNOTES ///////////////////////////////////////
+
+// `ptr` is shorthand for pointer: variables containing memory addresses are known as pointers
