@@ -27,18 +27,16 @@ The length is 5 because we pushed 5 items and the capacity is 12 because after t
 
 ## 3. Exploring the pop() method
 
-
-
+Array { length: 12, _capacity: 39, ptr: 15 }
+ We popped 3 times which decreased the length by 3
 
 
 <br />
 
 ## 4. Understanding more about how arrays work
-
-
-
-
-
+First Item - 10
+String prints as NaN because Array is defined as holding Floats only
+Resize makes the array capable of holding more values by trippling in hopes that we don't need to do it often.
 <br />
 
 ## 5. URLify a string

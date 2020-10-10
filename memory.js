@@ -39,7 +39,7 @@ class Memory {
         }
     }
 
-    get(ptr) {
+    get(ptr) { 
         return this.memory[ptr];
     }
 

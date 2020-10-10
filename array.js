@@ -13,7 +13,7 @@ class Array {
         if (this.length >= this._capacity) {
             this._resize((this.length + 1) * Array.SIZE_RATIO);
         }
-
+        // console.log(memory.set(this.ptr + this.length, value))
         memory.set(this.ptr + this.length, value);
         this.length++;
     }
@@ -77,27 +77,29 @@ function main(){
     let arr = new Array();
 
     // Add an item to the array
-    arr.push(10);
-    arr.push(3);
-    arr.push(4);
-    arr.push(15);
-    arr.push(14);
-    arr.push(10);
-    arr.push(3);
-    arr.push(4);
-    arr.push(15);
-    arr.push(14);
-    arr.push(10);
-    arr.push(3);
-    arr.push(4);
-    arr.push(15);
-    arr.push(14);
+    // arr.push(10);
+    // arr.push(3);
+    // arr.push(4);
+    // arr.push(15);
+    // arr.push(14);
+    // arr.push(10);
+    // arr.push(3);
+    // arr.push(4);
+    // arr.push(15);
+    // arr.push(14);
+    // arr.push(10);
+    // arr.push(3);
+    // arr.push(4);
+    // arr.push(15);
+    // arr.push(14);
 
-    arr.pop()
-    arr.pop()
-    arr.pop()
+    // arr.pop()
+    // arr.pop()
+    // arr.pop()
 
-    console.log(arr);
+    arr.push('tauhida')
+
+    console.log(arr.get(0));
 }
 
 main()
