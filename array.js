@@ -93,6 +93,10 @@ function main(){
     arr.push(15);
     arr.push(14);
 
+    arr.pop()
+    arr.pop()
+    arr.pop()
+
     console.log(arr);
 }
 
