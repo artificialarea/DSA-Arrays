@@ -18,10 +18,11 @@ To run any of these scripts, in terminal command line enter: `node script-name.j
 
 ## 2. Explore the push() method
 
+Array { length: 1, _capacity: 3, ptr: 0 }
+Array { length: 5, _capacity: 12, ptr: 3 }
+The length is 5 because we pushed 5 items and the capacity is 12 because after the fourth push the resize was called and increased capacity to 3X the original capacity.
 
-
-
-
+??How is the pointer calculated the way it is
 <br />
 
 ## 3. Exploring the pop() method

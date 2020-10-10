@@ -8,6 +8,7 @@ class Array {
         this.ptr = memory.allocate(this.length);
     }
 
+
     push(value) {
         if (this.length >= this._capacity) {
             this._resize((this.length + 1) * Array.SIZE_RATIO);
@@ -68,3 +69,31 @@ class Array {
 }
 Array.SIZE_RATIO = 3;
 
+function main(){
+
+    Array.SIZE_RATIO = 3;
+
+    // Create an instance of the Array class
+    let arr = new Array();
+
+    // Add an item to the array
+    arr.push(10);
+    arr.push(3);
+    arr.push(4);
+    arr.push(15);
+    arr.push(14);
+    arr.push(10);
+    arr.push(3);
+    arr.push(4);
+    arr.push(15);
+    arr.push(14);
+    arr.push(10);
+    arr.push(3);
+    arr.push(4);
+    arr.push(15);
+    arr.push(14);
+
+    console.log(arr);
+}
+
+main()
