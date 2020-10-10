@@ -55,7 +55,7 @@ see: **`urlify.js`**
 
 ## 6. Filtering an array
 
-
+see: **`filter-array.js`**
 
 
 
@@ -71,7 +71,7 @@ see: **`urlify.js`**
 
 ## 8. Merge arrays
 
-
+see: **`merge-arrays.js`**
 
 
 
