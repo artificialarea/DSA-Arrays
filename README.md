@@ -63,7 +63,9 @@ see: **`filter-array.js`**
 
 ## 7. Max sum in the array
 
+see: **`sum-array.js`**
 
+Assuming in the Thinkful input/output example the output should be **11** _(not 12)_, eh?
 
 
 
