@@ -1,25 +1,33 @@
 function removeChar(string, chars) {
-    // const arrStr = string.split('');
-    // const arrChar = chars.split('');
+    // Limitation: do not use Javascript's filter, split, or join methods.
 
-    let result = [];
-    let charsFilter = [];
-    let finalResults = '';
+    let stringArr = [];
+    let charsArr = [];
+    let result = '';
     
     for (let i = 0; i < string.length; i++) {
-        result.push(string.charAt(i))
+        stringArr.push(string.charAt(i));
     }
     for (let i = 0; i < chars.length; i++) {
-        charsFilter.push(chars.charAt(i))
+        charsArr.push(chars.charAt(i));
     }
 
-    for (let i = 0; i < result.length; i++) {
-        if(charsFilter.includes(result[i]) == false){
-            finalResults = finalResults + result[i]
+    // v1 filter
+    // for (let i = 0; i < stringArr.length; i++) {
+    //     if(charsArr.includes(stringArr[i]) == false){
+    //         result = result + stringArr[i];
+    //     }
+    // }
+
+    // v2 filter
+    for (let element of stringArr) {
+        if (!charsArr.includes(element)) {
+            result += element;
         }
     }
 
-    console.log(finalResults);
+    console.log(result);
+    return result;
 }
 
 const string = 'Battle of the Vowels: Hawaii vs. Grozny';

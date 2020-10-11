@@ -12,4 +12,4 @@ const URLify = (string) => {
 };
 
 
-console.log(URLify('tika taco tpm'))
+console.log(URLify('http://thinkful.com / taco time'))

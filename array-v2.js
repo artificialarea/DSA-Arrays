@@ -10,10 +10,16 @@ class Array {
 
 
     push(value) {
+        // v2: RESIZE CONDITIONAL
+        // Rather than resizing every time you push some data, 
+        // you could allocate more space (_capacity) than you need. 
+        // That way you would need to resize far less often.
+        // Best and Average case now: O(1) ...because won't need to resize. 
+        // The tradeoff is that you are wasting some memory when the capacity is greater than the length.
         if (this.length >= this._capacity) {
             this._resize((this.length + 1) * Array.SIZE_RATIO);
         }
-        // console.log(memory.set(this.ptr + this.length, value))
+        
         memory.set(this.ptr + this.length, value);
         this.length++;
     }
@@ -69,38 +75,4 @@ class Array {
 }
 Array.SIZE_RATIO = 3;
 
-function main(){
-
-    Array.SIZE_RATIO = 3;
-
-    // Create an instance of the Array class
-    let arr = new Array();
-
-    // Add an item to the array
-    // arr.push(10);
-    // arr.push(3);
-    // arr.push(4);
-    // arr.push(15);
-    // arr.push(14);
-    // arr.push(10);
-    // arr.push(3);
-    // arr.push(4);
-    // arr.push(15);
-    // arr.push(14);
-    // arr.push(10);
-    // arr.push(3);
-    // arr.push(4);
-    // arr.push(15);
-    // arr.push(14);
-
-    // arr.pop()
-    // arr.pop()
-    // arr.pop()
-
-    arr.push('tauhida')
-
-    console.log(arr.get(0));
-}
-
-main()
-
+module.exports = Array;
