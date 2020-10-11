@@ -10,7 +10,7 @@ To run any of these scripts, in terminal command line enter: `node script-name.j
 
 ## 1. Implement an Array class from scratch
 
-see: **[`array-v1.js`](https://github.com/artificialarea/DSA-Arrays/blob/main/array-v1.js)** + **[`array-v2.js`](https://github.com/artificialarea/DSA-Arrays/blob/main/array-v2.js)** have different approaches to dealing with capacity and memory addresses + **[`memory.js`](https://github.com/artificialarea/DSA-Arrays/blob/main/memory.js)**
+see: **[`memory.js`](https://github.com/artificialarea/DSA-Arrays/blob/main/memory.js)** & **[`array-v1.js`](https://github.com/artificialarea/DSA-Arrays/blob/main/array-v1.js)** + **[`array-v2.js`](https://github.com/artificialarea/DSA-Arrays/blob/main/array-v2.js)** which have different approaches to dealing with capacity and memory addresses in `push(value)` method.
 
 
 
@@ -24,6 +24,8 @@ see: **[`array-actions.js`](https://github.com/artificialarea/DSA-Arrays/blob/ma
 **1) What is the length, capacity and memory address of your array?**
 
 `Array { length: 1, _capacity: 3, ptr: 0 }`
+
+<br />
 
 **2) What is the length, capacity and memory address of your array after additonal `arr.push()`es?**
 
@@ -43,6 +45,8 @@ see: **[`array-actions.js`](https://github.com/artificialarea/DSA-Arrays/blob/ma
 
 :confused:&nbsp; **?? QUESTION: How is the pointer calculated the way it is ??**
 
+<br />
+
 **3) What is the purpose of the `_resize()` function in your Array class?**
 > To allocate a new block of memory for our array when the current block of memory is too small to perform the operation we need.
 
@@ -53,12 +57,12 @@ see: **[`array-actions.js`](https://github.com/artificialarea/DSA-Arrays/blob/ma
 
 ## 3. Exploring the pop() method
 
-see: **[`array-actions.js`](https://github.com/artificialarea/DSA-Arrays/blob/main/array-actions.js)** if import `array-v1.js`
+see: **[`array-actions.js`](https://github.com/artificialarea/DSA-Arrays/blob/main/array-actions.js)** (with import `array-v1.js`)
 
 **What is the length, capacity and memory address of your array after some `arr.pop()`s?**
 
 `Array { length: 3, _capacity: 18, ptr: 45 }`
-> We popped 3 times which decreases the length by 3, but the capacity and memory address have already been shifted by pushing and remain as is.
+> We popped 3 times which decreases the length by 3, but the capacity and memory address have already been shifted by previous pushing and remain as is.
 
 
 
@@ -69,7 +73,7 @@ see: **[`array-actions.js`](https://github.com/artificialarea/DSA-Arrays/blob/ma
 
 see: **[`array-float.js`](https://github.com/artificialarea/DSA-Arrays/blob/main/array-float.js)**
 
-> Item prints as `NaN` because item is a string and the Array is defined as holding floats only: `this.memory = new Float64Array(1024);`
+> Item prints as `NaN` because item is a string and the Array is defined as holding floats (numbers) only: `this.memory = new Float64Array(1024);`
 
 
 
