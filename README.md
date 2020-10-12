@@ -148,7 +148,15 @@ see: **[`2d-reset.js`](https://github.com/artificialarea/DSA-Arrays/blob/main/2d
 
 > **O(n^3)** (I think) Because one nested for loop O(n^2) alongside another nested for loop within a forEach loop O(n^3).
 
-Instructions: Write an algorithm which searches through a 2D array, and whenever it finds a 0 should set the entire row and column to 0.
+> Curio: one of the conditions with a nested for loop was incorrect and upon running it subsequently generated a `report.20201011.204731.41054.0.001.json` _**file**_ as an artifact...
+```
+"event": "Allocation failed - JavaScript heap out of memory",
+"trigger": "FatalError",
+```
+
+<br />
+
+**Instructions:** Write an algorithm which searches through a 2D array, and whenever it finds a 0 should set the entire row and column to 0.
 
 ```
 Input:
@@ -175,7 +183,18 @@ Output:
 
 ## 12. String rotation
 
+see: **[`string-rotation.js`](https://github.com/artificialarea/DSA-Arrays/blob/main/string-rotation.js)**
 
+> **O(n)**
+
+<br />
+
+**Instructions:** Given 2 strings, `str1` and `str2`, write a program that checks if `str2` is a rotation of `str1`. Examples..
+
+* Input: `amazon, azonma`
+* Output: `false`
+* Input: `amazon, azonam`
+* Output: `true` _(shifted backwards two characters)_
 
 
 
