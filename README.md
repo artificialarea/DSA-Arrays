@@ -10,7 +10,9 @@ To run any of these scripts, in terminal command line enter: `node script-name.j
 
 ## 1. Implement an Array class from scratch
 
-see: **[`memory.js`](https://github.com/artificialarea/DSA-Arrays/blob/main/memory.js)** & **[`array-v1.js`](https://github.com/artificialarea/DSA-Arrays/blob/main/array-v1.js)** + **[`array-v2.js`](https://github.com/artificialarea/DSA-Arrays/blob/main/array-v2.js)** which have different approaches to dealing with capacity and memory addresses in `push(value)` method.
+see: **[`memory.js`](https://github.com/artificialarea/DSA-Arrays/blob/main/memory.js)** 
+
+see: **[`array-v1.js`](https://github.com/artificialarea/DSA-Arrays/blob/main/array-v1.js)** & **[`array-v2.js`](https://github.com/artificialarea/DSA-Arrays/blob/main/array-v2.js)** which have different approaches to dealing with capacity and memory addresses in `push(value)` method.
 
 
 
