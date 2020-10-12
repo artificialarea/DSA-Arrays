@@ -146,7 +146,9 @@ see: **[`products.js`](https://github.com/artificialarea/DSA-Arrays/blob/main/pr
 
 see: **[`2d-reset.js`](https://github.com/artificialarea/DSA-Arrays/blob/main/2d-reset.js)**
 
-Write an algorithm which searches through a 2D array, and whenever it finds a 0 should set the entire row and column to 0.
+> **O(n^3)** (I think) Because one nested for loop O(n^2) alongside another nested for loop within a forEach loop O(n^3).
+
+Instructions: Write an algorithm which searches through a 2D array, and whenever it finds a 0 should set the entire row and column to 0.
 
 ```
 Input:
